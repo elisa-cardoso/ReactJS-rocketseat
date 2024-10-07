@@ -12,7 +12,7 @@ export function Post({ author, publishedAt, content }) {
         'Post muito bacana, hein?! 👏👏'
     ])
 
-    const [newCommentText, setNewCommentText] = useState('') 
+    const [newCommentText, setNewCommentText] = useState('')
 
     const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
         locale: ptBR
@@ -32,6 +32,15 @@ export function Post({ author, publishedAt, content }) {
 
     function handleNewCommentChange() {
         setNewCommentText(event.target.value);
+    }
+
+    function deleteComment(commentToDelete) {
+        // imutabilidade -> as variaveis não sofrem mutação, nó criamos um novo valor (um novo espaço na memória)
+        const commentsWithoutDeleteOne = comments.filter(comment => {
+            return comment != commentToDelete;
+        })
+
+        setComments(commentsWithoutDeleteOne)
     }
 
     return (
@@ -66,10 +75,11 @@ export function Post({ author, publishedAt, content }) {
                 <strong>Deixe seu feedback</strong>
 
                 <textarea
-                name='comments'
+                    name='comments'
                     placeholder='Deixe um comentário'
                     value={newCommentText}
                     onChange={handleNewCommentChange}
+                    required
                 />
 
                 <footer>
@@ -81,7 +91,13 @@ export function Post({ author, publishedAt, content }) {
 
             <div className={styles.commentList}>
                 {comments.map(comment => {
-                    return <Comment key={comment} content={comment} />
+                    return (
+                        <Comment
+                            key={comment}
+                            content={comment}
+                            onDeleteComment={deleteComment}
+                        />
+                    )
                 })}
             </div>
         </article>
