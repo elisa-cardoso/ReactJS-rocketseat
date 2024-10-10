@@ -1,7 +1,52 @@
 {
-    "transactions": [
-      { "id": 1, "description": "Free service", "type": "income", "price": 100, "category": "services", "createdAt": "2024-10-01" },
-      { "id": 2, "description": "Paid subscription", "type": "outcome", "price": 50, "category": "subscriptions", "createdAt": "2024-10-02" },
-      { "id": 3, "description": "Hambuguer", "type": "outcome", "price": 80, "category": "food", "createdAt": "2023-10-09" }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "description": "UX Design",
+      "type": "income",
+      "price": 100,
+      "category": "Serviço",
+      "createdAt": "2024-07-22T19:18:03.600Z"
+    },
+    {
+      "id": 2,
+      "description": "Assinatura",
+      "type": "outcome",
+      "price": 50,
+      "category": "Educação",
+      "createdAt": "2024-01-12T13:18:03.600Z"
+    },
+    {
+      "id": 3,
+      "description": "Hambuguer",
+      "type": "outcome",
+      "price": 80,
+      "category": "Alimentação",
+      "createdAt": "2023-10-10T13:20:03.600Z"
+    },
+    {
+      "description": "Desenvolvimento de site",
+      "price": 10000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2024-10-10T13:18:03.600Z",
+      "id": 4
+    },
+    {
+      "description": "Chocolate",
+      "price": 4,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-10-10T13:36:54.348Z",
+      "id": 5
+    },
+    {
+      "description": "Sorvete",
+      "price": 12,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-10-10T13:38:22.691Z",
+      "id": 6
+    }
+  ]
 }
