@@ -1,8 +1,4 @@
-# React + Vite
+# Ignite: Controle Financeiro
+Este projeto é uma aplicação frontend desenvolvida com React, JavaScript e Vite, que implementa o funcionamento de uma rede social. O projeto foi desenvolvido com foco em estudo e aprendizado prático, como parte do curso oferecido pela Rocketseat.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Página Inicial](./src/assets/1.1.png)
