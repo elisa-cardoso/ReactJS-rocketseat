@@ -1,0 +1,7 @@
+{
+    "transactions": [
+      { "id": 1, "description": "Free service", "type": "income", "price": 100, "category": "services", "createdAt": "2024-10-01" },
+      { "id": 2, "description": "Paid subscription", "type": "outcome", "price": 50, "category": "subscriptions", "createdAt": "2024-10-02" },
+      { "id": 3, "description": "Hambuguer", "type": "outcome", "price": 80, "category": "food", "createdAt": "2023-10-09" }
+    ]
+}
